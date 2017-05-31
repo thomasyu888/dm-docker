@@ -20,4 +20,4 @@ confidence <- c(ages, ages)
 
 predictions <- data.frame(subjectId, laterality, confidence)
 
-write.table(predictions, file = "/output/predictions.tsv", sep = "\t")
+write.table(predictions, file = "/output/predictions.tsv", sep = "\t", row.names=F,quote=F)
